@@ -1,5 +1,6 @@
 import * as React from 'react';
 
+import Accent from '@/components/Accent';
 import Layout from '@/components/layout/Layout';
 import ButtonLink from '@/components/links/ButtonLink';
 import UnderlineLink from '@/components/links/UnderlineLink';
@@ -28,7 +29,9 @@ export default function HomePage() {
               <Vercel className='text-4xl' />
               <Vercel className='text-2xl' />
             </div>
-            <h1 className='mt-4'>Muhajir - Front-end Developer</h1>
+            <h1 className='mt-4'>
+              Muhajir - <Accent>Front-end Developer</Accent>
+            </h1>
             <p className='mt-2 text-sm text-gray-800'>
               I am front-end developer who loves minimalism{' '}
             </p>
