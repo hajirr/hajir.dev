@@ -23,7 +23,11 @@ export default function HomePage() {
       <main>
         <section className='bg-white'>
           <div className='layout flex min-h-screen flex-col items-center justify-center text-center'>
-            <Vercel className='text-5xl' />
+            <div className='flex'>
+              <Vercel className='text-2xl' />
+              <Vercel className='text-4xl' />
+              <Vercel className='text-2xl' />
+            </div>
             <h1 className='mt-4'>Muhajir - Front-end Developer</h1>
             <p className='mt-2 text-sm text-gray-800'>
               I am front-end developer who loves minimalism{' '}
