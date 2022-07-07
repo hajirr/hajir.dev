@@ -1,8 +1,8 @@
 import clsx from 'clsx';
-import Image from 'next/image';
 import * as React from 'react';
 
 import UnstyledLink from '@/components/links/UnstyledLink';
+import NextImage from '@/components/NextImage';
 
 import { BlogFrontmatter } from '@/types/frontmatters';
 
@@ -33,10 +33,11 @@ export default function BlogCard({
         href={`https://${post.slug}`}
       >
         <div className='relative'>
-          <Image
+          <NextImage
+            useSkeleton
             src={post.banner}
-            width={1200}
-            height={(1200 * 2) / 5}
+            width='100%'
+            height='50%'
             alt='project'
             className='rounded'
             layout='responsive'
@@ -45,14 +46,14 @@ export default function BlogCard({
         <div className='p-4'>
           <h4 className='text-gray-800'>{post.title}</h4>
           <p className='text-sm text-gray-700 '>{post.description}</p>
-          <div className='flex'>
-            <Image
-              alt='language'
-              className='ml-auto'
-              width={30}
-              src={post.language}
-            />
-          </div>
+          <NextImage
+            useSkeleton
+            className='ml-auto'
+            alt='language'
+            width={30}
+            height={30}
+            src={post.language}
+          />
         </div>
       </UnstyledLink>
     </li>
