@@ -15,7 +15,6 @@ export default function Portfolio() {
               <Accent>Portfolio</Accent>
             </h1>
           </UnstyledLink>
-
           <ul
             className='mt-4 grid gap-4 sm:grid-cols-2 xl:grid-cols-3'
             data-fade='5'

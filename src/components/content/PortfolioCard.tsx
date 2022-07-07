@@ -45,6 +45,14 @@ export default function BlogCard({
         <div className='p-4'>
           <h4 className='text-gray-800'>{post.title}</h4>
           <p className='text-sm text-gray-700 '>{post.description}</p>
+          <div className='flex'>
+            <Image
+              alt='language'
+              className='ml-auto'
+              width={30}
+              src={post.language}
+            />
+          </div>
         </div>
       </UnstyledLink>
     </li>

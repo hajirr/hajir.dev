@@ -3,4 +3,5 @@ export type BlogFrontmatter = {
   title: string;
   description: string;
   banner: string;
+  language: string;
 };
