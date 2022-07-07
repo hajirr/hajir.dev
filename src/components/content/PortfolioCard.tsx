@@ -46,14 +46,20 @@ export default function BlogCard({
         <div className='p-4'>
           <h4 className='text-gray-800'>{post.title}</h4>
           <p className='text-sm text-gray-700 '>{post.description}</p>
-          <NextImage
-            useSkeleton
-            className='ml-auto'
-            alt='language'
-            width={30}
-            height={30}
-            src={post.language}
-          />
+          <div className='flex w-full'>
+            <div className='ml-auto flex'>
+              {post.language.map((e) => (
+                <NextImage
+                  useSkeleton
+                  key={e}
+                  alt='language'
+                  width={30}
+                  height={30}
+                  src={e}
+                />
+              ))}
+            </div>
+          </div>
         </div>
       </UnstyledLink>
     </li>
